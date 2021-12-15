@@ -64,7 +64,7 @@ body {
 }
 
 .circle.active {
-  border-color: lightseagreen;
+  border-color: rgb(24, 218, 208);
 }
 
 .btn {
