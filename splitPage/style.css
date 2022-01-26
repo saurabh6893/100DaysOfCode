@@ -1,3 +1,8 @@
+:root {
+  --hover-width: 75%;
+  --other-width: 25%;
+}
+
 * {
   box-sizing: border-box;
 }
@@ -55,6 +60,7 @@ h1 {
   background: url(images/yorichi.jpg);
   background-repeat: no-repeat;
   background-size: cover;
+  transition: 1s all ease;
 }
 
 .split.A::before {
@@ -75,6 +81,7 @@ h1 {
   background: url(images/muzan.jpg);
   background-repeat: no-repeat;
   background-size: cover;
+  transition: 1s all ease;
 }
 
 .split.B::before {
@@ -106,4 +113,20 @@ h1 {
     rgb(63, 13, 18, 0.5) 0%,
     rgb(167, 29, 49, 0.5) 74%
   );
+}
+
+.hover-A .A {
+  width: var(--hover-width);
+}
+
+.hover-A .B {
+  width: var(--other-width);
+}
+
+.hover-B .B {
+  width: var(--hover-width);
+}
+
+.hover-B .A {
+  width: var(--other-width);
 }
